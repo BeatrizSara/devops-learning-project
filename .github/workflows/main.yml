@@ -5,20 +5,20 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Teste
-        run: echo "CI funcionando"
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.12
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
 
-    steps:
-      - name: Deploy
-        run: echo "CD funcionando"
+      - name: Rodar testes
+        run: pytest
