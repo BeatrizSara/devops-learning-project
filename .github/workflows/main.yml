@@ -22,3 +22,6 @@ jobs:
 
       - name: Rodar testes
         run: PYTHONPATH=. pytest
+
+      - name: Alerta de sucesso
+        run: echo "Alerta enviado. Pipeline executado com sucesso"
