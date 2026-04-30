@@ -3,60 +3,51 @@
 🚀 Projeto prático de aprendizado em DevOps com foco em:
 
 - Git e GitHub
-- CI/CD (GitHub Actions)
+- CI/CD com GitHub Actions
 - Docker
-- Estruturação de projetos
+- FastAPI
+- Testes unitários
+- Monitoramento e alertas
+- Estruturação profissional de projetos
 
 ---
 
 ## 📌 Objetivo
 
-Este repositório foi criado para praticar conceitos fundamentais de DevOps, incluindo versionamento de código, automação de pipelines e containerização de aplicações.
+Este repositório foi desenvolvido como parte da disciplina de DevOps, com o objetivo de aplicar práticas reais de:
+
+- Versionamento
+- Integração contínua
+- Entrega contínua
+- Containerização
+- Testes automatizados
+- Monitoramento e notificações
 
 ---
 
 ## ⚙️ Tecnologias utilizadas
 
-- Git & GitHub
-- GitHub Actions (CI/CD)
+- Python 3.12
+- FastAPI
+- Pytest
+- GitHub Actions
 - Docker
-- HTML (aplicação simples)
+- Git/GitHub
 
 ---
 
-## 🐳 Docker
+## 🧪 Testes unitários
 
-A aplicação foi containerizada utilizando Docker com a imagem base do Nginx.
+Foram implementados testes automatizados para validar:
 
-### Comandos utilizados:
+- Status da rota principal
+- Conteúdo da API
+- Documentação Swagger
+- OpenAPI
+- Rotas inválidas
+
+### Executar testes:
 
 ```bash
-docker build -t devops-app .
-docker run -p 8080:80 devops-app
+pytest
 ```
-
----
-
-## 🔄 CI/CD
-
-Pipeline configurado com GitHub Actions para:
-
-- Build automático
-- Simulação de deploy
-
----
-
-## 📁 Estrutura do projeto
-
-```
-.github/
-Dockerfile
-index.html
-README.md
-```
-
----
-
-## 👩‍💻 Autora
-
-Beatriz Sara
